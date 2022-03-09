@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkTVCell" rowHeight="104" id="bwl-lY-9dY" customClass="WorkTVCell" customModule="AdirApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bwl-lY-9dY" id="SJU-8E-2u3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-rZ-Cth">
+                        <rect key="frame" x="2" y="10" width="410" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TPf-H3-0YC">
+                                <rect key="frame" x="15" y="20" width="0.0" height="50"/>
+                                <color key="tintColor" red="0.054901960780000002" green="0.054901960780000002" blue="1" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ANC-eq-DpT"/>
+                                    <constraint firstAttribute="width" id="JYe-dc-vRB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMp-cl-x3d">
+                                <rect key="frame" x="25" y="24" width="365" height="28"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-XF-A0Z">
+                                <rect key="frame" x="25" y="54" width="196" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="due: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jag-QF-RSf">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" tomorrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btM-ze-DJa">
+                                        <rect key="frame" x="36.5" y="0.0" width="78" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" at " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbx-nJ-m6o">
+                                        <rect key="frame" x="114.5" y="0.0" width="24" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:00pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Os-iN-siw">
+                                        <rect key="frame" x="138.5" y="0.0" width="57.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HMp-cl-x3d" firstAttribute="leading" secondItem="TPf-H3-0YC" secondAttribute="trailing" constant="10" id="3aI-0K-mSi"/>
+                            <constraint firstItem="HMp-cl-x3d" firstAttribute="top" secondItem="5tm-rZ-Cth" secondAttribute="top" constant="24" id="6sW-a3-boA"/>
+                            <constraint firstAttribute="trailing" secondItem="HMp-cl-x3d" secondAttribute="trailing" constant="20" id="CLF-7m-F3W"/>
+                            <constraint firstItem="DUZ-XF-A0Z" firstAttribute="leading" secondItem="TPf-H3-0YC" secondAttribute="trailing" constant="10" id="J3d-ui-5AI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DUZ-XF-A0Z" secondAttribute="trailing" constant="20" id="Nde-Zk-7ud"/>
+                            <constraint firstItem="TPf-H3-0YC" firstAttribute="top" secondItem="5tm-rZ-Cth" secondAttribute="top" constant="20" id="gvH-bY-Ja6"/>
+                            <constraint firstItem="DUZ-XF-A0Z" firstAttribute="top" secondItem="HMp-cl-x3d" secondAttribute="bottom" constant="2" id="heJ-2W-48y"/>
+                            <constraint firstItem="TPf-H3-0YC" firstAttribute="leading" secondItem="5tm-rZ-Cth" secondAttribute="leading" constant="15" id="y0S-gR-8TH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5tm-rZ-Cth" firstAttribute="top" secondItem="SJU-8E-2u3" secondAttribute="top" constant="10" id="DTG-NN-kLw"/>
+                    <constraint firstAttribute="trailing" secondItem="5tm-rZ-Cth" secondAttribute="trailing" constant="2" id="GRR-sP-Neq"/>
+                    <constraint firstAttribute="bottom" secondItem="5tm-rZ-Cth" secondAttribute="bottom" constant="4" id="bEb-eM-Xyk"/>
+                    <constraint firstItem="5tm-rZ-Cth" firstAttribute="leading" secondItem="SJU-8E-2u3" secondAttribute="leading" constant="2" id="lF6-Zr-M8G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="atLabel" destination="Lbx-nJ-m6o" id="NwN-zj-b8C"/>
+                <outlet property="containerView" destination="5tm-rZ-Cth" id="vAN-n3-g5d"/>
+                <outlet property="subtitleLabel" destination="4Os-iN-siw" id="M1q-47-FoZ"/>
+                <outlet property="titleLabel" destination="HMp-cl-x3d" id="4Lr-Zm-J7Y"/>
+                <outlet property="tomorrowLabel" destination="btM-ze-DJa" id="KqO-2D-s7q"/>
+                <outlet property="workImageView" destination="TPf-H3-0YC" id="ztU-7B-1Lg"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="60.9375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
